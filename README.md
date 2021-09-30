@@ -1,0 +1,3 @@
+# PhilGWoods_CoinFlip
+Mobil Órai Szorgalmi feladat 1/3
+a 4. feladat c-je nem működik, mert nem ment a delay ciklusba...
