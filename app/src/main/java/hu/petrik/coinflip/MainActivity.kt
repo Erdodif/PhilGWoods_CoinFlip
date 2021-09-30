@@ -62,10 +62,10 @@ class MainActivity : AppCompatActivity() {
                 eredmeny = "Vereség"
             }
             builder.setMessage("$eredmeny. Új játék?")
-            builder.setPositiveButton("Igen") { dialog, which ->
+            builder.setPositiveButton("Igen") { _, _ ->
                 init()
             }
-            builder.setNegativeButton("Nem") { dialog, which ->
+            builder.setNegativeButton("Nem") { _, _ ->
                 exitProcess(0)
             }
             builder.show()
@@ -73,18 +73,13 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun megjelenit(fej: Boolean, animalt: Boolean) {
+    private fun megjelenit(fej: Boolean, animalt: Boolean = false) {
         if (animalt) {
             var jelenAllas = false
             megjelenit(jelenAllas)
             jelenAllas = !jelenAllas
             megjelenit(jelenAllas)
         }
-        megjelenit(fej)
-    }
-
-
-    private fun megjelenit(fej: Boolean) {
         if (fej) {
             imageViewErme.setImageResource(R.drawable.heads)
         } else {
