@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">CoinFlip</string>
+    <string name="app_name">Fej vagy Írás</string>
+    <string name="pennis">Ez egy peni(mint a bolt)</string>
+    <string name="fej">Fej</string>
+    <string name="iras">Írás</string>
+    <string name="dobasok">Dobások: 0</string>
+    <string name="gyozelem">Győzelem: 0</string>
+    <string name="vereseg">Vereség: 0</string>
 </resources>
